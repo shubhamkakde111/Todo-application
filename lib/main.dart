@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:project/firebase_options.dart';
 import 'package:project/pages/signup.dart';
 
-Future main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.android);
   runApp(const MyApp());
